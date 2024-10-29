@@ -57,5 +57,140 @@ video {
 }
 
 // ---------------------------------------------
-// Votre code ici :
+// Votre code ici
+// 001
+.wrapper-hover .item:hover {
+  background: #e23d84;
+}
+
+// 02
+.wrapper-transition .item {
+  transition-property: background;
+  transition-duration: 0.5s;
+}
+.wrapper-transition .item:hover {
+  background: #e23d84;
+}
+
+// 03
+.wrapper-delay .item {
+  transition-property: background;
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
+}
+.wrapper-delay .item:hover {
+  background: #e23d84;
+}
+
+// 04
+.wrapper-two-properties .item {
+  transition-property: background;
+  transition-duration: 0.5s;
+}
+.wrapper-two-properties .item:hover {
+  background: #e23d84;
+  color: black;
+}
+
+// 05
+.wrapper-delay-one-property .item {
+  transition: background 0.5s, color 1s;
+}
+.wrapper-delay-one-property .item:hover {
+  background: #e23d84;
+  color: black;
+}
+
+// 06
+.wrapper-parent .item {
+  transition: background 0.5s;
+}
+.wrapper-parent:hover .item {
+  background: #e23d84;
+}
+
+// 07
+.wrapper-parent-delay .item {
+  transition: background 0.5s;
+}
+.wrapper-parent-delay .item:hover {
+  background: #e23d84;
+}
+
+.wrapper-parent-delay .item:nth-child(2) {
+  transition-delay: 01s;
+}
+.wrapper-parent-delay .item:nth-child(3) {
+  transition-delay: 1.5s;
+}
+.wrapper-parent-delay .wrapper-parent-delay:hover .item:nth-child(1) {
+  background-color: #e23d84;
+  transition-delay: 0.5s;
+}
+.wrapper-parent-delay .wrapper-parent-delay:hover .item:nth-child(2) {
+  background-color: #e23d84;
+  transition-delay: 1s;
+}
+.wrapper-parent-delay .wrapper-parent-delay:hover .item:nth-child(3) {
+  background-color: #e23d84;
+  transition-delay: 1.5s;
+}
+
+// 08
+.wrapper-parent-children:hover {
+  background: #4c68e5;
+}
+.wrapper-parent-children {
+  transition: background 0.5s;
+}
+.wrapper-parent-children .item {
+  transition: background 0.5s;
+}
+.wrapper-parent-children:hover .item {
+  background: #e23d84;
+}
+
+// 09
+.wrapper-parent-children-delay:hover {
+  background: #4c68e5;
+}
+
+.wrapper-parent-children-delay {
+  transition: background 0.5s;
+}
+
+.wrapper-parent-children-delay .item {
+  transition: background 0.5s 0.5s;
+}
+
+.wrapper-parent-children-delay:hover .item {
+  background-color: #e23d84;
+}
+
+// 10
+.wrapper-translate .item{
+  transition: transform 0.5s;
+}
+
+.wrapper-translate .item:hover {
+  transform: translateY(20%);
+}
+
+// 11
+.wrapper-rotate .item{
+  transition: transform 0.5s;
+}
+
+.wrapper-rotate .item:hover {
+  transform: rotate(90deg);
+}
+
+// 12
+.wrapper-scale .item{
+  transition: transform 0.5s;
+}
+
+.wrapper-scale .item:hover {
+  transform: scale(1.2);
+}
 // ---------------------------------------------
